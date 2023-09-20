@@ -1,0 +1,60 @@
+.paragraphe {
+    margin: 2rem; /* Reduced margin for better spacing */
+    color: rgba(255, 255, 255, 0.8); /* Increased opacity for readability */
+    text-align: center;
+    font-size: 1.25rem; /* Adjusted font size for better readability */
+    font-weight: bold; /* Used 'bold' for font-weight */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .paragraphe:hover {
+    color: white; /* White on hover for better contrast */
+  }
+  
+  /* Title Styles */
+  .titre {
+    margin: 2rem; /* Reduced margin for better spacing */
+    color: white;
+    text-align: center;
+    font-size: 2rem; /* Increased font size for emphasis */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .titre:hover {
+    color: rgba(21, 96, 189); /* Changed hover color to blue */
+  }
+  
+  /* Subtitle Styles */
+  .sousTitre {
+    margin: 1rem; /* Reduced margin for better spacing */
+    color: rgba(255, 255, 255, 0.6); /* Slightly reduced opacity for subheadings */
+    text-align: center;
+    font-size: 1rem; /* Adjusted font size for subheadings */
+    font-weight: normal; /* Normal font weight for subheadings */
+    line-height: 1.5; /* Improved line height for readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .sousTitre:hover {
+    color: white; /* White on hover for better contrast */
+  }
+
+  .image {
+    display: block;
+    margin: 2rem auto 0; /* Added a margin of 2rem on the top */
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.centerScreen {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure container takes up at least the full viewport height */
+  }
+  
+  

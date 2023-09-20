@@ -1,0 +1,33 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    height: 70px; /* Adjust the height as needed */
+    background-color: #333;
+    display: flex; /* Display links horizontally */
+    justify-content: center; /* Center-align links */
+    align-items: center; /* Vertically center the links */
+  }
+  
+  /* Sidebar links styles */
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items horizontally */
+    justify-content: space-between; /* Add equal spacing between links */
+    align-items: center; /* Vertically center the links */
+  }
+  
+  .linkList li {
+    margin: 0; /* Remove individual margin */
+  }
+  
+  .linkList a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px; /* Add equal spacing between links (adjust as needed) */
+  }
+  
