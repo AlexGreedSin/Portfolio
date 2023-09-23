@@ -1,0 +1,81 @@
+/* Center the content vertically and horizontally */
+.centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow-y: scroll; /* Keep the vertical scrollbar */
+    scrollbar-width: none; /* Remove the default scrollbar for Firefox */
+  }
+  
+  /* Hide the scrollbar for Chrome, Edge, and Safari */
+  .centeredContent::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Style for headings */
+  .titre {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for paragraphs */
+  .paragraphe {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Style for images */
+  .image {
+    max-width: 100%; /* Set max-width to 100% (full width) */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem;
+  }
+  
+  /* Add more styles as needed */
+  
+  /* Add margin to all elements */
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    gap: 1rem;
+  }
+  
+
+  
+  /* Style for the sidebar */
+  .sidebar {
+    width: 10%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Style for sidebar links */
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .linkList a {
+    text-decoration: none;
+    color: white;
+  }
+  
