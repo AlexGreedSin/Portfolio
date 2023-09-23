@@ -10,13 +10,13 @@ const SidebarMenu = () => {
           <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="/projects/CodeL">Projects</Link>
+          <Link href="/projects/CodeL">CodeL</Link>
         </li>
         <li>
-          <Link href="/projects/SpaceSurvivor">Projects</Link>
+          <Link href="/projects/SpaceSurvivor">SpaceSurvivor</Link>
         </li>
         <li>
-          <Link href="/projects/SystemeCaisse">Projects</Link>
+          <Link href="/projects/SystemeCaisse">SystemeCaisse</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
