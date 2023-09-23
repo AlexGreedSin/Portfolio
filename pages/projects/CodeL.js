@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from '../../styles/Game.module.css'; // Updated import path
 import CodeL1 from '../../public/images/Projet1.png';
-import CodeL2 from '../../public/images/Projet1.png';
-import CodeL3 from '../../public/images/Projet1.png';
+import CodeL2 from '../../public/images/Projet2.png';
+import CodeL3 from '../../public/images/Projet3.png';
 import Head from "next/head";
 import SidebarMenu from '../../components/SidebarMenu'; // Import SidebarMenu
 
@@ -21,7 +21,7 @@ export default function CodeL() {
         <h1 className={styles.titre}>Code L</h1>
         <Image src={CodeL1} alt="Image1 Code L" className={styles.image} priority />
        <p className={styles.paragraphe}>
-          Code L est un jeu vidéo créé par moi et deux collègues de classe.
+          Code L est un jeu vidéo auquel j&apos;ai crée.
           Le jeu vidéo est écrit en C# dans le logiciel Unity, un logiciel très populaire
           pour le développement de jeux professionnels.
         </p>
