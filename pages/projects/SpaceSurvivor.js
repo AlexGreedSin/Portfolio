@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../../styles/Game.module.css';
 import SpaceSurvivor1 from '../../public/images/SpaceGame1.png'; // Updated import
-import SpaceSurvivor2 from '../../public/images/SG2.png'; // Updated import
+import SpaceSurvivor2nd from '../../public/images/SG2.png'; // Updated import
 import Head from "next/head";
 import SidebarMenu from '../../components/SidebarMenu'; // Import SidebarMenu
 
@@ -27,7 +27,7 @@ export default function SpaceSurvivor() {
         très simplement et de mettre les codes bien séparés dans chacun d&apos;entre eux. C&apos;est un logiciel très utile pour utiliser et améliorer nos connaissances en programmation.
         </p>
 
-        <Image src={SpaceSurvivor2} alt="Image2 SpaceSurvivor" className={styles.image} priority />
+        <Image src={SpaceSurvivor2nd} alt="Image2 SpaceSurvivor" className={styles.image} priority />
 
       <p className={styles.paragraphe}>
         Dans ce jeu, j&apos;ai tout programmé : le contrôle du vaisseau principal permettant de se déplacer partout sur l&apos;écran, 

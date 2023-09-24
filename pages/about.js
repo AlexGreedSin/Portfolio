@@ -23,7 +23,7 @@ function About() {
             <p className={styles.sousTitre}>Bien sûr, si vous désirez avoir plus de détails, n&apos;hésitez pas à me contacter. Toutes les informations pour me contacter seront dans la section &ldquo;Contact&ldquo; de mon Portfolio.</p>
             <h1 className={styles.titre}>À propos de moi :</h1>
             <p className={styles.sousTitre}>
-              Bonjour, Je m&apos;appelle Alexandre Bailey-Proulx, j&apos;ai 19 ans et j&apos;ai toujours eu une grande passion pour la création de jeux vidéos et logiciels. Je suis un programmeur informatique,
+              Bonjour, Je m&apos;appelle Alexandre Bailey-Proulx. J&apos;ai toujours eu une grande passion pour la création de jeux vidéos et logiciels. J&apos;ai comme objectif de devenir programmeur informatique,
               j&apos;ai étudié au collège La Cité à Ottawa pendant 2 ans dans le programme Programmation informatique.
               Je connais plusieurs langues de programmation de base comme le C#, Java, HTML, CSS ainsi que des connaissances en réseautique et bases de données.
             </p>
