@@ -78,4 +78,17 @@
     text-decoration: none;
     color: white;
   }
-  
+  /* Language Switch Button Styles */
+.languageButton {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 0.5rem 1rem; /* Add some padding for better appearance */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.languageButton:hover {
+  background-color: gray; /* Change background color to gray on hover */
+  color: white; /* Change text color to white on hover */
+}

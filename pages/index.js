@@ -16,6 +16,7 @@ function Home() {
          </Head>
           <div className={styles.centerScreen}>
            <h1 className={styles.titre}>Bienvenue sur mon Portefolio</h1>
+           <h1 className={styles.titre}>Welcome to my Portefolio</h1>
           </div>
         </div>
       </div>

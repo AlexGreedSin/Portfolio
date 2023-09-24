@@ -1,79 +1,112 @@
+/* Paragraph Styles */
 .paragraphe {
-    margin: 2rem; /* Reduced margin for better spacing */
-    color: rgba(255, 255, 255, 0.8); /* Increased opacity for readability */
-    text-align: center;
-    font-size: 1.25rem; /* Adjusted font size for better readability */
-    font-weight: bold; /* Used 'bold' for font-weight */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  .paragraphe:hover {
-    color: white; /* White on hover for better contrast */
-  }
-  
-  /* Title Styles */
-  .titre {
-    margin: 2rem; /* Reduced margin for better spacing */
-    color: white;
-    text-align: center;
-    font-size: 2rem; /* Increased font size for emphasis */
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .titre:hover {
-    color: rgba(21, 96, 189); /* Changed hover color to blue */
-  }
-  
-  /* Subtitle Styles */
+  margin: 1rem; /* Adjusted margin for better spacing */
+  color: rgba(255, 255, 255, 0.8); /* Increased opacity for readability */
+  text-align: center;
+  font-size: 1.25rem; /* Adjusted font size for better readability */
+  font-weight: bold; /* Used 'bold' for font-weight */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.paragraphe:hover {
+  color: white; /* White on hover for better contrast */
+}
+
+/* Title Styles */
+.titre {
+  margin: 1rem; /* Adjusted margin for better spacing */
+  color: white;
+  text-align: center;
+  font-size: 2rem; /* Increased font size for emphasis */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Subtitle Styles */
+.sousTitre {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem; /* Adjusted margin for better spacing */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .paragraphe,
+  .titre,
   .sousTitre {
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 1.5rem;
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+    margin: 0.5rem; /* Reduced margin for smaller screens */
   }
-  
-  /* Media query for smaller screens (e.g., mobile devices) */
-  @media (max-width: 768px) {
-    .sousTitre {
-      font-size: 1rem; /* Adjust the font size for smaller screens */
-      margin-bottom: 1rem; /* Reduce margin for smaller screens */
-    }
-  }
-  
-  .sousTitre:hover {
-    color: white; /* White on hover for better contrast */
-  }
+}
 
-  .image {
-    display: block;
-    margin: 2rem auto 0; /* Added a margin of 2rem on the top */
-    max-width: 100%;
-    height: auto;
-  }
+.sousTitre:hover {
+  color: white; /* White on hover for better contrast */
+}
 
+/* Image Styles */
+.image {
+  display: block;
+  margin: 1rem auto 0; /* Added a margin of 1rem on the top */
+  max-width: 100%;
+  height: auto;
+}
 
-
+/* Centered Container Styles */
 .centerScreen {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    min-height: 100vh; /* Ensure container takes up at least the full viewport height */
-  }
-    /* Style for sidebar links */
-    .linkList {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .linkList li {
-      margin-bottom: 0.5rem;
-    }
-    
-    .linkList a {
-      text-decoration: none;
-      color: white;
-    }
-    
-  
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure container takes up at least the full viewport height */
+}
+
+/* Centered Text Styles */
+.centeredText {
+  max-width: 80%; /* Limit the text width to 80% of the viewport width */
+  text-align: center; /* Center-align text within the container */
+  padding: 1rem; /* Add some padding to prevent text from touching edges */
+}
+
+
+ /* Style for the sidebar */
+ .sidebar {
+  width: 10%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Style for sidebar links */
+.linkList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 0.5rem;
+}
+
+.linkList a {
+  text-decoration: none;
+  color: white;
+}
+/* Language Switch Button Styles */
+.languageButton {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  padding: 0.5rem 1rem; /* Add some padding for better appearance */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.languageButton:hover {
+  background-color: gray; /* Change background color to gray on hover */
+  color: white; /* Change text color to white on hover */
+}
