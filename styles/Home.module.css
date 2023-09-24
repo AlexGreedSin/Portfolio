@@ -27,13 +27,17 @@
   
   /* Subtitle Styles */
   .sousTitre {
-    margin: 1rem; /* Reduced margin for better spacing */
-    color: rgba(255, 255, 255, 0.6); /* Slightly reduced opacity for subheadings */
-    text-align: center;
-    font-size: 1rem; /* Adjusted font size for subheadings */
-    font-weight: normal; /* Normal font weight for subheadings */
-    line-height: 1.5; /* Improved line height for readability */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .sousTitre {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+      margin-bottom: 1rem; /* Reduce margin for smaller screens */
+    }
   }
   
   .sousTitre:hover {
