@@ -8,8 +8,10 @@ import CodeL2 from '../../public/images/Projet2.png';
 import CodeL3 from '../../public/images/3.png';
 
 export default function CodeL() {
-  const [language, setLanguage] = useState('english'); // Default language is English
+  // State to manage language (default language is English)
+  const [language, setLanguage] = useState('english');
 
+  // Function to toggle between English and French
   const toggleLanguage = () => {
     setLanguage(language === 'english' ? 'french' : 'english');
   };
@@ -19,18 +21,38 @@ export default function CodeL() {
       <SidebarMenu />
       <div className={styles.centeredContent}>
         <Head>
-          <title>Alexandre Bailey-Proulx&Apos;s Portfolio - Code L</title>
-          <meta name="description" content={language === 'english' ? "Code L video game created using Unity software. Objective: escape from the labyrinth." : "Jeu vidéo Code L sur le logiciel Unity. Objectif : sortir du labyrinthe."} />
-          <meta property="og:title" content="Alexandre Bailey-Proulx's Portfolio - Code L" />
-          <meta property="og:description" content={language === 'english' ? "Code L video game created using Unity software. Objective: escape from the labyrinth." : "Jeu vidéo Code L sur le logiciel Unity. Objectif : sortir du labyrinthe."} />
+          {/* Dynamic title and description based on language */}
+          <title>
+            Alexandre Bailey-Proulx&apos;s Portfolio - {language === 'english' ? 'Code L' : 'Code L'}
+          </title>
+          <meta
+            name="description"
+            content={
+              language === 'english'
+                ? "Code L video game created using Unity software. Objective: escape from the labyrinth."
+                : "Jeu vidéo Code L sur le logiciel Unity. Objectif : sortir du labyrinthe."
+            }
+          />
+          <meta property="og:title" content={`Alexandre Bailey-Proulx's Portfolio - ${language === 'english' ? 'Code L' : 'Code L'}`} />
+          <meta
+            property="og:description"
+            content={
+              language === 'english'
+                ? "Code L video game created using Unity software. Objective: escape from the labyrinth."
+                : "Jeu vidéo Code L sur le logiciel Unity. Objectif : sortir du labyrinthe."
+            }
+          />
           <meta property="og:image" content="http://localhost:3000/public/img/CodeL2.PNG" />
         </Head>
         <div>
+          {/* Button to toggle language */}
           <button onClick={toggleLanguage} className={styles.languageButton}>
             {language === 'english' ? 'Switch to French' : 'Switch to English'}
           </button>
         </div>
-        <h1 className={styles.titre}>Code L</h1>
+        {/* Title */}
+        <h1 className={styles.titre}>{language === 'english' ? 'Code L' : 'Code L'}</h1>
+        {/* First Image */}
         <Image src={CodeL1} alt="Image1 Code L" className={styles.image} priority />
         <p className={styles.paragraphe}>
           {language === 'english' ? 
@@ -38,6 +60,7 @@ export default function CodeL() {
             'Code L est un jeu vidéo que j\'ai créé. Le jeu vidéo est écrit en C# avec Unity, un logiciel très populaire pour le développement de jeux professionnels.'
           }
         </p>
+        {/* Second Image */}
         <Image src={CodeL2} alt="Image2 Code L" className={styles.image} priority />
         <p className={styles.paragraphe}>
           {language === 'english' ?
@@ -45,6 +68,7 @@ export default function CodeL() {
             'Pendant le développement du jeu, j\'ai programmé divers aspects, notamment les mouvements possibles du personnage, les collisions avec le fond et le premier plan, et les animations. De plus, j\'ai programmé les transitions de scène et les énigmes du jeu. J\'ai également conçu les énigmes et les scènes. J\'ai entièrement créé et programmé la page du menu principal. Elle comprend plusieurs éléments : le bouton "jouer" pour démarrer le jeu et, bien sûr, jouer, le bouton "quitter" pour sortir et un bouton "options" pour les paramètres graphiques, la taille de lécran et le contrôle du volume.'
           }
         </p>
+        {/* Third Image */}
         <Image src={CodeL3} alt="Image3 Code L" className={styles.image} priority />
       </div>
     </div>

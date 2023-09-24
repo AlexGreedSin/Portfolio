@@ -1,23 +1,23 @@
 /* Paragraph Styles */
 .paragraphe {
-  margin: 1rem; /* Adjusted margin for better spacing */
-  color: rgba(255, 255, 255, 0.8); /* Increased opacity for readability */
+  margin: 1rem;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  font-size: 1.25rem; /* Adjusted font size for better readability */
-  font-weight: bold; /* Used 'bold' for font-weight */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .paragraphe:hover {
-  color: white; /* White on hover for better contrast */
+  color: white;
 }
 
 /* Title Styles */
 .titre {
-  margin: 1rem; /* Adjusted margin for better spacing */
+  margin: 1rem;
   color: white;
   text-align: center;
-  font-size: 2rem; /* Increased font size for emphasis */
+  font-size: 2rem;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -26,7 +26,7 @@
 .sousTitre {
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 1rem; /* Adjusted margin for better spacing */
+  margin-bottom: 1rem;
 }
 
 /* Media query for smaller screens (e.g., mobile devices) */
@@ -34,19 +34,19 @@
   .paragraphe,
   .titre,
   .sousTitre {
-    font-size: 1rem; /* Adjusted font size for smaller screens */
-    margin: 0.5rem; /* Reduced margin for smaller screens */
+    font-size: 1rem;
+    margin: 0.5rem;
   }
 }
 
 .sousTitre:hover {
-  color: white; /* White on hover for better contrast */
+  color: white;
 }
 
 /* Image Styles */
 .image {
   display: block;
-  margin: 1rem auto 0; /* Added a margin of 1rem on the top */
+  margin: 1rem auto 0;
   max-width: 100%;
   height: auto;
 }
@@ -54,22 +54,21 @@
 /* Centered Container Styles */
 .centerScreen {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  min-height: 100vh; /* Ensure container takes up at least the full viewport height */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Centered Text Styles */
 .centeredText {
-  max-width: 80%; /* Limit the text width to 80% of the viewport width */
-  text-align: center; /* Center-align text within the container */
-  padding: 1rem; /* Add some padding to prevent text from touching edges */
+  max-width: 80%;
+  text-align: center;
+  padding: 1rem;
 }
 
-
- /* Style for the sidebar */
- .sidebar {
+/* Style for the sidebar */
+.sidebar {
   width: 10%;
   background-color: #333;
   display: flex;
@@ -96,17 +95,18 @@
   text-decoration: none;
   color: white;
 }
+
 /* Language Switch Button Styles */
 .languageButton {
-  background-color: black; /* Set background color to black */
-  color: white; /* Set text color to white */
-  padding: 0.5rem 1rem; /* Add some padding for better appearance */
-  border: none; /* Remove the button border */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition on hover */
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .languageButton:hover {
-  background-color: gray; /* Change background color to gray on hover */
-  color: white; /* Change text color to white on hover */
+  background-color: gray;
+  color: white;
 }

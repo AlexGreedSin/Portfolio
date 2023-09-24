@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '../components/layout';
+import Layout from '../components/layout'; // Import the Layout component
 import SidebarMenu from '../components/SidebarMenu';
 import styles from '../styles/Home.module.css';
 
 function About() {
-  const [language, setLanguage] = useState('english'); // Default to English
+  const [language, setLanguage] = useState('english'); // Default language is English
 
+  // Function to toggle between English and French
   const toggleLanguage = () => {
     setLanguage(language === 'english' ? 'french' : 'english');
   };
 
+  // Define content for both English and French
   const content = {
     english: {
       title: "Alexandre Bailey-Proulx's Portfolio - About",
@@ -37,15 +39,15 @@ function About() {
     },
   };
 
-  const currentContent = content[language];
+  const currentContent = content[language]; // Get content based on the selected language
 
   return (
-    <Layout>
+    <Layout> {/* Wrap the content in a Layout component */}
       <div className={styles.centeredContainer}>
         <SidebarMenu />
         <div className={styles.flexGrow}>
           <Head>
-            <title>{currentContent.title}</title>
+            <title>{currentContent.title}</title> {/* Set the page title */}
             <meta name="description" content={currentContent.description} />
             <meta property="og:title" content={currentContent.title} />
             <meta property="og:description" content={currentContent.description} />
@@ -59,7 +61,6 @@ function About() {
             <div className={styles.centeredText}>
               <p className={styles.sousTitre}>{currentContent.aboutMe.intro}</p>
               <p className={styles.sousTitre}>{currentContent.aboutMe.skills}</p>
-
               <p className={styles.sousTitre}>{currentContent.aboutMe.qualities}</p>
             </div>
             <Image className={styles.image} src="/images/Me.jpg" alt="A picture of my face" width={200} height={200} />

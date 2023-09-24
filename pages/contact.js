@@ -4,18 +4,21 @@ import styles from '../styles/Contact.module.css';
 import SidebarMenu from '../components/SidebarMenu';
 
 export default function SystemeContacts() {
-  const [language, setLanguage] = useState('english'); // Default language is English
+  // State to manage the selected language (default is English)
+  const [language, setLanguage] = useState('english');
 
+  // Function to toggle the language between English and French
   const toggleLanguage = () => {
     setLanguage(language === 'english' ? 'french' : 'english');
   };
 
   return (
     <div className={styles.pageContainer}>
-      <SidebarMenu />
+      <SidebarMenu /> {/* Include the SidebarMenu component */}
       <div className={styles.centeredContent}>
         <Head>
           <title>Alexandre Bailey-Proulx&apos;s Portfolio - Me Contacter</title>
+          {/* Set metadata for the page */}
           <meta name="description" content={language === 'english' ? "Contact form for easy contact with me." : "Formulaire pour Me Contacter facilement."} />
           <meta property="og:title" content="Alexandre Bailey-Proulx's Portfolio - Me Contacter" />
           <meta property="og:description" content={language === 'english' ? "Contact form for easy contact with me." : "Formulaire pour Me Contacter facilement."} />
@@ -23,6 +26,7 @@ export default function SystemeContacts() {
         </Head>
 
         <div className={styles.contactContainer}>
+          {/* Language toggle button */}
           <div>
             <button onClick={toggleLanguage} className={styles.languageButton}>
               {language === 'english' ? 'Switch to French' : 'Switch to English'}
@@ -30,6 +34,7 @@ export default function SystemeContacts() {
           </div>
           <h1 className={styles.titre}>Me contacter</h1>
           <p className={styles.paragraphe}>
+            {/* Display different text based on the selected language */}
             {language === 'english' ?
               "For more details, you can contact me using the following links: " :
               "Pour plus de détails, vous pouvez me contacter en utilisant les liens suivants : "

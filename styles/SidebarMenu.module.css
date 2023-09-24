@@ -1,4 +1,4 @@
-/* Sidebar styles */
+/* Style for the sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
     align-items: center; /* Vertically center the links */
   }
   
-  /* Sidebar links styles */
+/* Style for sidebar links */
   .linkList {
     list-style-type: none;
     padding: 0;

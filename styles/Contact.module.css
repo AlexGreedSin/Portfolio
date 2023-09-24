@@ -1,55 +1,62 @@
-/* Contact.module.css */
+/* Overall page container styles */
 .pageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000; 
-  }
-  
-  .centeredContent {
-    background-color: #d5dbe3; /* Background color inverted to white */
-    color: #000; /* Text color inverted to black */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .contactContainer {
-    text-align: center;
-  }
-  
-  .titre {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .paragraphe {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-  }
-  
-  .link {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  
-  .emailLink {
-    color: #0070f3;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .languageButton {
-    background-color: #d5dbe3; 
-    color: black;
-    padding: 0.5rem 1rem; /* Add some padding for better appearance */
-    border: none; /* Remove the button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  .languageButton:hover {
-    background-color: gray; /* Change background color to gray on hover */
-    color: white; /* Change text color to white on hover */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+/* Styles for the centered content */
+.centeredContent {
+  background-color: #d5dbe3; /* Background color inverted to white */
+  color: #000; /* Text color inverted to black */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for contact information */
+.contactContainer {
+  text-align: center;
+}
+
+/* Title styles */
+.titre {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+.paragraphe {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Link styles */
+.link, .emailLink {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+/* Email link styles */
+.emailLink {
+  font-weight: bold;
+}
+
+/* Language toggle button styles */
+.languageButton {
+  background-color: #d5dbe3;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover styles */
+.languageButton:hover {
+  background-color: gray;
+  color: white;
+}
