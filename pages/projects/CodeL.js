@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from '../../styles/Game.module.css'; // Updated import path
-import CodeL1 from '../../public/images/Projet1.png';
+import CodeL1 from '../../public/images/projet1.png';
 import CodeL2 from '../../public/images/Projet2.png';
-import CodeL3 from '../../public/images/Projet3.png';
+import CodeL3 from '../../public/images/projet3.png';
 import Head from "next/head";
 import SidebarMenu from '../../components/SidebarMenu'; // Import SidebarMenu
 
