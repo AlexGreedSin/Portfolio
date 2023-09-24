@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../../styles/Game.module.css';
-import SpaceSurvivor1 from '../../public/images/SpaceGame1.png'; // Updated import
-import SpaceSurvivor2nd from '../../public/images/SG2.png'; // Updated import
+import SpaceSurvivor2nd from '../../public/images/SpaceGame1.png'; // Updated import
+import SpaceSurvivor1 from '../../public/images/SG2.png'; // Updated import
 import Head from "next/head";
 import SidebarMenu from '../../components/SidebarMenu'; // Import SidebarMenu
 
