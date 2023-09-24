@@ -3,9 +3,13 @@ import styles from '../../styles/Game.module.css';
 import SystemeCaisse1 from '../../public/images/SystemeCaisse1.png';
 import SystemeCaisse2 from '../../public/images/SC2.png';
 import Head from "next/head"
+import SidebarMenu from '../../components/SidebarMenu'; // Import SidebarMenu
+
 export default function SystemeCaisse() {
     return (
       <div className={styles.pageContainer}>
+        <SidebarMenu /> {/* Add the Sidebar */}
+        <div className={styles.centeredContent}>
         <Head>
           <title>Portefolio Alexandre Bailey-Proulx Caisse</title>
           <meta name="description" content="logiciel de caisse pour calculer les achats d'une compagnie fictive" />
@@ -14,7 +18,6 @@ export default function SystemeCaisse() {
           <meta property="og:description" content="logiciel de caisse pour calculer les achats d'une compagnie fictive" />
           <meta property="og:image" content="http://localhost:3000/public/img/SystemeCaisse.PNG"/>
         </Head>
-        <div className={styles.contentContainer}>
           <h1 className={styles.titre}>Systeme Caisse</h1>
   
             <Image src={SystemeCaisse1} alt="Image1 SystemeCaisse" className={styles.image} priority/>
