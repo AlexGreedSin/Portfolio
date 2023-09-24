@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Head from "next/head"
-import styles from 'styles/Contacts.module.css'
+import styles from '../styles/Contact.module.css'
+import SidebarMenu from '../components/SidebarMenu';
 export default function SystemeContacts(){
 
     //creation de tout les const du form pour envoyer un email
@@ -73,7 +74,9 @@ export default function SystemeContacts(){
             console.log(data)
         }
     }
-    return <>
+    return <div className={styles.pageContainer}> {/* Add a container for the whole page */}
+      <SidebarMenu /> {/* Add the Sidebar */}
+      <div className={styles.centeredContent}> {/* Updated className */}
         <Head>
             <title>Portefolio Alexandre Bailey-Proulx Me Contacter</title>
             <meta name="description" content="Formulaire pour Me Contacter facilement"/>
@@ -85,47 +88,44 @@ export default function SystemeContacts(){
 
         <h1 className={styles.titre}>Me contacter</h1>
 
-        <p className={styles.paragraphe}>
-            Pour plus de details, vous pouvez me contacter 
-            en utilisant un des liens suivants. 
-            <a href="https://www.linkedin.com/in/alexandre-bailey-proulx-498291234/"> linkedin</a>,
-            à l&apos;adresse courriel alexandrebp24@gmail.com ou simplement en remplissant vos informations
-            dans les cases suivantes : 
-        </p>
+    <p className={styles.paragraphe}>
+        Pour plus de détails, vous pouvez me contacter en utilisant un des liens suivants.{" "}
+        <a href="https://www.linkedin.com/in/alexandre-bailey-proulx-498291234/">linkedin</a>,{" "}
+        à l&apos;adresse courriel alexandrebp24@gmail.com ou simplement en remplissant vos informations
+        dans les cases suivantes :
+    </p>
 
-        <form className={styles.form} noValidate onSubmit={handleSubmit}>
+    <form className={styles.form} noValidate onSubmit={handleSubmit}>
+        <div className={styles.formElement}>
             <label>
                 Votre Courriel:
-                <input type="email" required value={courriel} onChange={handleCourrielChange} onBlur={valideCourriel}/>
+                <input type="email" required value={courriel} onChange={handleCourrielChange} onBlur={valideCourriel} />
             </label>
-            {erreurCourriel &&
+            {erreurCourriel && (
                 <div className={styles.erreur}>
                     {erreurCourriel}
                 </div>
-            }
+            )}
+        </div>
 
+        <div className={styles.formElement}>
             <label>
                 Objet:
-                <input type="text" required value={Objet} onChange={handleObjetChange} onBlur={valideObjet}/>
+                <input type="text" required value={Objet} onChange={handleObjetChange} onBlur={valideObjet} />
             </label>
-            {erreurObjet &&
-                <div className={styles.erreur}>
-                    {erreurObjet}
-                </div>
-            }
-            
-            <label className= {styles.message}>
-                Message:
-                <textarea className={styles.messageBox} required minLength="8" maxLength="800" value={Message} onChange={handleMessageChange} onBlur={valideMessage}/>
-            </label>
-            {erreurMessage &&
-                <div className={styles.erreur}>
-                    {erreurMessage}
-                </div>
-            }
+            {erreurObjet && (<div className={styles.erreur}> {erreurObjet} </div>)}
+        </div>
 
-            <input type="submit" value="Envoyer" />
-        </form>
-        
-    </>
+        <div className={`${styles.formElement} ${styles.message}`}>
+            <label>
+                Message:
+                <textarea className={styles.messageBox} required minLength="8" maxLength="800" value={Message} onChange={handleMessageChange} onBlur={valideMessage} />
+            </label>
+            {erreurMessage && (<div className={styles.erreur}>{erreurMessage} </div>)}
+        </div>
+
+        <input type="submit" value="Envoyer" />
+    </form>
+    </div>
+</div>
 }

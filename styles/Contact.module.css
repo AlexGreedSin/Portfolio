@@ -1,0 +1,217 @@
+/* Contacts.module.css */
+
+/* Form container */
+.form-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center; /* Center everything horizontally */
+  }
+  
+  /* Form title */
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white; /* Make text white */
+  }
+  
+  /* Form paragraph */
+  .form-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white; /* Make text white */
+  }
+  
+  /* Form label and input */
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* Make text white */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white; /* Make input text white */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white; /* Make text white */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Style for the sidebar */
+  .sidebar {
+    width: 10%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Style for sidebar links */
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .linkList a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Center the content vertically and horizontally */
+.centeredContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow-y: scroll; /* Keep the vertical scrollbar */
+    scrollbar-width: none; /* Remove the default scrollbar for Firefox */
+  }
+  
+  /* Hide the scrollbar for Chrome, Edge, and Safari */
+  .centeredContent::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    gap: 1rem;
+  }
+  
+
+    /* Style for headings */
+    .titre {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      
+      /* Style for paragraphs */
+      .paragraphe {
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Style for message boxes */
+.messageBox {
+    font-size: 1.5rem;
+    color: white;
+    background-color: #0070f3; /* Message box background color */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Style for form elements container */
+  .formElement {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  /* Style for labels */
+  .formElement label {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Style for input fields */
+  .formElement input,
+  .formElement textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Style for error messages */
+  .erreur {
+    font-size: 1rem;
+    color: #ff0000; /* Red color for error messages */
+    margin-top: 0.25rem;
+  }
+  
+  /* Style for the message box */
+  .messageBox {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #0070f3; /* Message box background color */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 200px; /* Adjust the minimum height as needed for long text */
+  }
+  
+  
+  /* Responsive adjustments (adjust as needed) */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 10px;
+    }
+    .form-input {
+      font-size: 14px;
+    }
+    .submit-button {
+      font-size: 14px;
+    }
+  }
+  
