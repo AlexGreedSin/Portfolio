@@ -16,7 +16,7 @@ function Home() {
          </Head>
           <div className={styles.centerScreen}>
             {/* Display a welcome message in both languages */}
-            <h1 className={styles.titre}>Bienvenue sur Le Portefolio D&apos;Alexandre </h1>
+            <h1 className={styles.titre}>Bienvenue sur le Portefolio D&apos;Alexandre </h1>
             <h1 className={styles.titre}>Welcome to Alexandre&apos;s Portefolio</h1>
           </div>
         </div>
